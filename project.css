@@ -1,0 +1,232 @@
+
+
+
+.middle{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+   
+
+
+}
+
+
+.middle2{
+
+    position:absolute;
+       top:100%;
+       left:37%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+
+}
+
+
+.welcome{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 120px;
+    color: rgb(155, 40, 40);
+    text-align: center;
+
+}
+
+
+.nav{
+
+
+    background-color: rgb(155, 40, 40);
+    color:cornsilk;
+    font-family: 'Shadows Into Light';
+   
+}
+
+.H{
+    list-style-type: none;
+    display: inline;
+   padding: 70px;
+   font-size: 40px;
+   padding-bottom:10px;
+
+}
+
+.contain{
+
+    background-color: rgb(155, 40, 40);
+    width: 100%;
+    margin: 2px;
+    position: absolute;
+    top:0%  
+}
+
+
+
+
+.text{
+
+    color: rgb(65, 59, 59);
+    font-family:'Kalam' ;
+    font-size: 25px;
+    font-display: 100;
+}
+ 
+
+
+.title{
+
+   color: rgb(155, 40, 40);
+   font-family:'Charmonman';
+   font-size: 50px;
+}
+
+
+
+
+.pic{
+
+   width:30%;
+   height: 150px;
+   margin-top: 220px;
+}
+
+
+.picd{
+
+    width:30%;
+    height: 150px;
+    margin-top: 100px;
+ }
+
+.foot{
+
+    text-align:center;
+    color: dimgray;
+
+}
+
+
+
+.tab{
+
+    width: 100%;
+    border: 2px solid rgb(155, 40, 40);
+    border-collapse: collapse;
+    font-size: 18px;
+}
+ th{
+     text-align: center;
+ }
+
+
+tr, td{
+
+    text-align: center;
+    font-family:'kalam';
+    border: 2px solid rgb(155, 40, 40);
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+
+tr :nth-child(odd):hover{
+
+    background-color: rgb(155, 40, 40);
+    color:bisque;
+}
+
+
+tr :nth-child(even):hover{
+
+    background-color:rgb(65, 59, 59);
+    color:bisque;
+}
+
+
+
+
+legend{
+
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    color: rgb(155, 40, 40);
+    padding: 2px;
+    font-size: 30px;
+        
+}
+label{
+
+    text-align: center;
+    font-family:'kalam';
+    color: rgb(155, 40, 40);
+    padding: 2px;
+    font-size: 18px;
+}
+
+
+span{
+
+    font-family: 'kalam';
+    color: rgb(53, 52, 52);
+    font-size: 13px;
+}
+
+
+
+
+
+.box{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    width:50%;
+}
+
+
+form{
+
+    background-color:rgba(252, 226, 196, 0.877);
+}
+
+
+
+
+    @media only screen and (max-width: 800px) {
+
+        .middle2{
+     
+         top:200%; } 
+   
+        .box{
+            top:70%;
+
+        }
+
+
+        .pic{
+            
+            height:200px;
+        }
+
+        .H{
+             
+           padding: 0px;
+           font-size: 30px;
+           margin: 0px; 
+     
+        }   
+
+        .dpic{
+
+            margin-top:10px; 
+        }
+
+        .welcome{
+
+            margin-top: 470px;
+        }
+  }
+  
+  

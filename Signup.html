@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+    <style>
+
+        body{
+           background-image: url("pista.jpg");
+           background-repeat: no-repeat; 
+           background-attachment: fixed;
+           background-position: top;
+           background-size: cover;
+        }
+    </style> 
+    
+</head>
+<body>
+    
+
+    <div class="w3-display-container w3-text-white">
+       <!-- <img src="psta.jpg" alt="Lights" style="width:100%; height: 100%; opacity: .45;">-->
+       
+       
+        <div class="box">
+
+            <form id="contactForm" action="">
+
+                <fieldset> <legend><strong>Registration</strong></legend>
+      
+                <p>
+      
+                 <label for="custname">First Name:  </label>
+                 <input  id="custname" name="custname"  type="text"/> 
+                 <span>Required.</span>
+                </p>
+      
+      
+                <p>
+      
+                  <label for="company">Second Name:</label>
+                  <input  id="company" name="company"  type="text" /> 
+                  <span>Optional.</span>                 </p>
+      
+      
+                 <p>
+      
+                  <label for="email">Email: </label>
+                  <input  id="email" name="email"  type="text" /> 
+                  <span>Required.</span>
+                 </p>
+      
+      
+                 <p>
+      
+                  <label for="password">Password:   </label>
+                  <input  id="password" name="password"  type="password" /> 
+                  <span>Required.</span>
+                 </p>
+      
+                 
+                
+              
+                 <p>
+      
+                  <label for="telephone">Phone Number:</label>
+                  <input  id="telephone" name="telephone"  type="text" /> 
+                  <span>Optional.</span>
+                 </p>
+                        
+      
+                 <p>
+      
+                  <label for="website">You favourite restaurant website: </label>
+                  <input  id="website" name="website"  type="text" /> 
+                  <span>Required.</span>
+                 </p>
+
+                     <p>
+                     <label for="gender"> Gender: </label>
+
+                     
+                     <input type="radio" id="gender" name="gender" value="Male" > 
+                     <label for="male" style="color: rgb(53, 52, 52);"> Male</label>
+
+
+                     
+                     <input type="radio" id="gender" name="gender" value="Female"  >
+                     <label for="female" style="color: rgb(53, 52, 52);">Female</label>
+                     </p>
+
+                  <p>
+                   <input class="submit" type="submit" name="submit" value="Submit" style="font-family: kalam; background-color: rgb(155,40, 40); color:rgba(255, 222, 182, 0.849)"/>
+                    <input type="reset" value="Clear" style="font-family: kalam; background-color: rgb(155,40, 40); color:rgba(255, 222, 182, 0.849)"/>
+                  </p>
+              </fieldset>
+            </form>
+      
+            <footer class="foot">
+                This website doesn't use cookies, enjoy using our website.
+            </footer>
+   </div>  
+   <div class="contain">
+    <nav>            
+    <ul>
+     <li class="H">
+         <a href="index.html" class="nav">Home</a>
+     </li>
+
+     <li class="H">
+        <a href="pasta.html" class="nav">Pasta</a>
+    </li>
+     
+    <li class="H">
+         <a href="Dessert.html" class="nav">Dessert</a>
+    </li> 
+    <li class="H">
+          <a href="Drinks.html" class="nav">Drinks</a>
+     </li>
+
+     <li class="H">
+        <a href="Signup.html" class="nav">Sign Up</a>
+    </li>
+   
+   
+
+   </ul>
+   </nav>
+   </div>
+       
+       
+
+                </div>
+
+           
+     
+
+<script>
+
+ window.onload=pageLoad;
+ 
+ function pageLoad(){
+     	var contactForm = document.getElementById("contactForm");
+ 	    contactForm.onsubmit= validate;
+         }
+
+      function validate(){
+           	var check = true;
+         	var name = document.getElementById("custname").value;
+        	var site = document.getElementById("website").value;
+            var mail = document.getElementById("email").value;
+            var phone = document.getElementById("telephone").value; 	
+            var password = document.getElementById("password").value; 	 	
+            
+            if(name == ""){
+                 		alert('Name is required !');
+                 		check= false; 	} 
+                         
+             if(mail == ""){ 
+                        alert('E-mail is required !'); 		
+                        check= false; 	
+                    } 	
+                    
+            if(password == ""){
+                 		alert('Password is required !'); 		
+                         check= false; 
+                        	} 
+    	 	if(site == ""){ 		
+                        alert('Website is required !'); 		
+                        check= false; 	
+                    }
+        	if (phone == "") {
+                 		alert('Phone is required !'); 	
+                    } 	 	
+                    
+            if (!name.match(/^[A-Za-z ]+$/)){ 
+                       alert("only letters or space allowed in name field"); 		
+                       check= false; 	
+                    } 	
+
+            if (!mail.match(/^[a-zA-z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){
+                		alert("Email is Not Valid"); 		
+                        check=false; 	} 	
+                        
+            if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/)){ 		
+                       alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
+                       check=false; 	} 	 	
+                       
+            //if (!phone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){ 		
+                if (!phone.match(/^[0-9]{11}$/)){
+                 		alert("Phone is not valid"); 		
+                        check=false; 	} 	
+                        
+         //   if (!site.match(/^(https:\/\/)[a-zA-Z]+\.[a-zA-Z0-9]+\.[a-zA-Z]+/)){ 	
+           //         	alert('Website is not valid !'); 		
+             //           check= false; 	} 	
+                        
+
+
+                        if (check==true){
+
+                            alert('Thank You:)')
+                        } 
+                        return check; 
+                        
+                       }
+
+
+
+
+</script> 
+</body>
+</html>
